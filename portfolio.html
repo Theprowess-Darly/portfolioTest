@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="./src/portfolio.css">
+</head>
+<body>
+
+<header>
+    <h1>Mon Portfolio</h1>
+</header>
+
+<div class="container">
+    <!-- Formulaire d'ajout de projet -->
+    <div class="form-container">
+        <h2>Ajouter un projet</h2>
+        <input type="text" id="projectName" placeholder="Nom du projet" />
+        <textarea id="projectDescription" placeholder="Description du projet" rows="4"></textarea>
+        <input type="date" id="projectDate" />
+        <button id="addProjectBtn">Ajouter</button>
+    </div>
+
+    <!-- Liste des projets -->
+     <h2>Liste des projets</h2>
+    <ul id="projectsList" class="projects-list">
+        <!-- Les projets seront ajoutés ici dynamiquement -->
+    </ul>
+</div>
+
+<script src="./src/portfolio.js" defer></script>
+
+</body>
+</html>
